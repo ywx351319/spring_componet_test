@@ -1,0 +1,16 @@
+server:
+  port: 8080
+  tomcat:
+    basedir: d:/upload_files
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 50MB
+      max-request-size: 55MB
+
+datasource:
+  url: jdbc:mysql://localhost:3306/miaomiao?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&serverTimezone=UTC
+  username: root
+  password: 
+  driver-class-name: com.mysql.cj.jdbc.Driver
